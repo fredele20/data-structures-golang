@@ -39,7 +39,7 @@ func (h *MaxHeap) maxHeapifyDown(index int) {
 	childToCompare := 0
 
 	// loop while index has at least one child
-	for leftChild < lastIndex {
+	for leftChild <= lastIndex {
 		if leftChild == lastIndex { // when left child is the only child
 			childToCompare = leftChild
 		} else if h.array[leftChild] > h.array[rightChild] { // when left child is larger than right child
